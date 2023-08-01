@@ -26,16 +26,23 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
+# Install PHP extensions with PECL
+pecl install imagick redis swoole
+
+# Install global Composer packages
+/usr/local/bin/composer global require laravel/installer laravel/valet
+
+# Install Laravel Valet
+$HOME/.composer/vendor/bin/valet install
+
 # Set default MySQL root password and auth type
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
 # Create a projects directories
-mkdir $HOME/Code
-mkdir $HOME/Herd
-
-# Create Code subdirectories
-mkdir $HOME/Code/blade-ui-kit
-mkdir $HOME/Code/laravel
+mkdir $HOME/Developer
+mkdir $HOME/Developer/Sites
+mkdir $HOME/Developer/Mobile
+mkdir $HOME/Developer/Desktop
 
 # Clone Github repositories
 ./clone.sh

@@ -3,7 +3,7 @@
 echo "Cloning repositories..."
 
 CODE=$HOME/Code
-SITES=$HOME/Herd
+SITES=$HOME/Developer/Sites
 BLADE=$CODE/blade-ui-kit
 LARAVEL=$CODE/laravel
 
