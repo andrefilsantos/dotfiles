@@ -5,6 +5,9 @@ alias ....="cd ../../.."
 alias c="clear"
 alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
 alias dev="cd $HOME/Developer"
+alias ds="cd $HOME/Developer/Sites"
+alias dm="cd $HOME/Developer/Mobile"
+alias ddsk="cd $HOME/Developer/Desktop"
 alias reloadshell="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
@@ -30,7 +33,6 @@ alias serve="php artisan serve"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
-alias composer="php -d memory_limit=-1 /opt/homebrew/bin/composer"
 
 # JS
 alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
@@ -59,5 +61,5 @@ alias unstage="git restore --staged ."
 alias wip="commit wip"
 
 # Updates
-alias lmu="composer update && composer dump-autoload && composer install && ncu -u && npm install && npm run dev"
+alias lmu="composer update && composer dump-autoload && composer install && ncu -u && npm install && npm run build"
 alias mu="brew upgrade && ncu -g && composer global update && flutter upgrade && npm i -g npm-check-updates"
