@@ -46,6 +46,7 @@ brew 'zstd'
 
 # Apps
 cask '1password'
+cask 'adobe-creative-cloud'
 cask 'appcleaner'
 cask 'anydesk'
 cask 'arc'
